@@ -29,7 +29,7 @@
 
 
 
-6. Now go to **https://aistudio.google.com/apikey** and create a new API key, select your project and copy the generaed key. Paste this key in your .env file like this :
+6. Now go to **https://aistudio.google.com/apikey** and create a new API key, select your project and copy the generated key. Paste this key in your .env file like this :
    - GEMINI_API_KEY = "_______"
 
 
