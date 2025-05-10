@@ -44,9 +44,7 @@
 10. Also add other SMTP related information like this :
    `SMTP_SERVER = "smtp-relay.brevo.com"`
    `SMTP_PORT = 587`
-   `RECIPIENT_EMAIL = "________"`
-
-   NOTE : The RECIPIENT_EMAIL here, contains the your personal email address you want to receive the user's feedback/query on.
+   `RECIPIENT_EMAIL = "admin's_email_address"`
 
 
 
