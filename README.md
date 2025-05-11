@@ -50,9 +50,6 @@
 
 9. In **Brevo dashboard**, click on the top right dropdown arrow, then on Senders, Domains & Dedicated IPs. Here click on Add Sender, enter any name and the email you are going to use to create an account in this webapp.
    - You can enter any name, just ensure that the email address you enter should be used to create the account in the streamlit webapp, otherwise the feedback will not be received on the recipient email addres.
-
-
-#
 #
 # 
 #### NOTE :
