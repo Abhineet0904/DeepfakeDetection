@@ -35,7 +35,7 @@
 
 
 7. Go to **https://www.brevo.com/** and create an account.
-   - Click on the top right dropdown arrow, then on SMTP & API. Copy the values of Login (_?_?_?_?_@smtp-relay.brevo.com) and the Master Password (_?_?_?_?_) in the .env file like this :
+   - Click on the top right dropdown arrow, then on SMTP & API. Copy the values of Login (`________@smtp-relay.brevo.com`) and the Master Password (`________`) in the .env file like this :
    - `SMTP_USERNAME = "________@smtp-relay.brevo.com"`
    - `SMTP_PASSWORD = "________"`
 
