@@ -31,7 +31,8 @@ st.markdown(
 
 
 
-load_dotenv(".env")
+dotenv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(dotenv_path)
 if not firebase_admin._apps :
     cred = credentials.Certificate(os.getenv("FIREBASE_PRIVATE_JSON_KEY"))
     firebase_admin.initialize_app(cred)
