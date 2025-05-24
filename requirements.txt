@@ -2,7 +2,7 @@ streamlit==1.25.0
 st-pages==0.4.1
 pandas
 plotly
-opencv-python
+opencv-python-headless
 firebase-admin
 pyrebase4
 python-dotenv
