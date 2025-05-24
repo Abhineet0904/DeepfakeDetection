@@ -164,7 +164,7 @@ if not st.session_state["logged_in"] :
 
         st.text("")
 
-        if st.button(":blue[**Forgot password?**]", help = "**Click to send password reset link**", type = "tertiary") :
+        if st.button(":blue[**Forgot password?**]", help = "**Click to send password reset link**", type = "secondary") :
             if email :
                 try :
                     user_exists = db.collection("User_data").where("email", "==", email).get()
