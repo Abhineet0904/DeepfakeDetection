@@ -56,12 +56,13 @@
 9. Click on the top right dropdown arrow, then on Senders, Domains & Dedicated IPs. Here click on Add Sender, enter any name and the email you are going to use to create an account in this webapp.
    - You can enter any name, just ensure that the email address you enter should be used to create the account in the streamlit webapp, otherwise the feedback will not be received on the recipient email address.
 
-Note : I have not provided the .env file since it contains confidential data. Create your own .env file in the root directory of your project.
+Note : I have not provided the .env file or the Firebase Admin SDK private key, since they contain confidential data. Create your own .env file in the root directory of your project, and generate your own key.
 
 
-##
+#
 ---
-##
+---
+#
 
 
 # INSTRUCTIONS FOR DEPLOYMENT ON STREAMLIT CLOUD :
@@ -99,7 +100,10 @@ Note : I have not provided the .env file since it contains confidential data. Cr
 
 #
 ---
+---
 #
+
+
 
 ```
 NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK.
