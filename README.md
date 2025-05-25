@@ -34,13 +34,15 @@
 
 
 9. Also add other SMTP related information like this :
-   `SMTP_SERVER = "smtp-relay.brevo.com"`
-   `SMTP_PORT = 587`
-   `RECIPIENT_EMAIL = "________"`
+   ```
+   SMTP_SERVER = "smtp-relay.brevo.com"
+   SMTP_PORT = 587
+   RECIPIENT_EMAIL = "________"
+   ```
    NOTE : The RECIPIENT_EMAIL here, contains the your personal email address you want to receive the user's feedback/query on.
 
 
-10. Click on the top right dropdown arrow, then on Senders, Domains & Dedicated IPs. Here click on Add Sender, enter any name and the email you are going to use to create an account in this webapp.
+11. Click on the top right dropdown arrow, then on Senders, Domains & Dedicated IPs. Here click on Add Sender, enter any name and the email you are going to use to create an account in this webapp.
    - You can enter any name, just ensure that the email address you enter should be used to create the account in the streamlit webapp, otherwise the feedback will not be received on the recipient email address.
 
 Note : I have not provided the .env file since it contains confidential data. Create your own .env file in the root directory of your project.
