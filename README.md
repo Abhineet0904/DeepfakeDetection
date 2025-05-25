@@ -6,19 +6,15 @@
    - Streamlit installed should be v1.25.0, to ensure compatibility with st-pages v0.4.1.
 
 
-
 2. Create a firebase account.
-
 
 
 3. In Firebase Authentication, go to Sign-in method, and add provider as Email/Password.
 
 
-
 4. In project settings, go to Service accounts and click on Generate new private key. Paste the downloaded firebase-adminsdk file with .json extension in your project's root directory.
-- Then paste the name of this file in .env file in your root folder in the following way :
+   - Then paste the name of this file in .env file in your root folder in the following way :
    `FIREBASE_PRIVATE_JSON_KEY = "_______"`
-
 
 
 6. Then go to General in project settings. In SDK setup and configuration, click on Config radio button, and copy the Firebase configuration object. Paste the object in the .env file in the following way :
@@ -27,17 +23,14 @@
    NOTE : If you haven't switched on Realtime database, then either "databaseURL" or "storageBucket" may not appear in your Firebase config object. Do not switch it on, since it isn't required. I had by mistake switched it on and then had to switch off.
 
 
-
 7. Now go to https://aistudio.google.com/apikey and create a new API key, select your project and copy the generaed key. Paste this key in your .env file like this :
    `GEMINI_API_KEY = "_______"`
-
 
 
 8. Go to https://www.brevo.com/ and create an account.
    - Click on the top right dropdown arrow, then on SMTP & API. Copy the values of Login (________@smtp-relay.brevo.com)) and the Master Password (________) in the .env file like this :
    `SMTP_USERNAME = "________@smtp-relay.brevo.com"`
    `SMTP_PASSWORD = "________"`
-
 
 
 9. Also add other SMTP related information like this :
@@ -48,8 +41,38 @@
    NOTE : The RECIPIENT_EMAIL here, contains the your personal email address you want to receive the user's feedback/query on.
 
 
-
 10. Click on the top right dropdown arrow, then on Senders, Domains & Dedicated IPs. Here click on Add Sender, enter any name and the email you are going to use to create an account in this webapp.
    - You can enter any name, just ensure that the email address you enter should be used to create the account in the streamlit webapp, otherwise the feedback will not be received on the recipient email address.
 
 Note : I have not provided the .env file since it contains confidential data. Create your own .env file in the root directory of your project.
+
+
+##
+---
+##
+
+
+# Instructions for deployment on Streamlit cloud :
+
+1. Upload your project on GitHub without the .env file or the .json file. Keep the repository public.
+
+
+2. Run your project locally, click on Deploy, choose the `Deploy a public app from GitHub` option.
+
+
+3. Enter your repository, branch, homepage, URL of your choice.
+
+
+4. Click on Advanced, change the Python version to 3.11.
+   Paste the content of the .env file in the `Secrets` textbox.
+
+
+5. Click on Save and then on Deploy.
+
+
+##
+---
+##
+
+NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK. 
+- For local deployment, contact me on LinkedIn, my account is there in the project description.
