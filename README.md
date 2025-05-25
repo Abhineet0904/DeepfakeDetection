@@ -1,4 +1,4 @@
-# Instructions for local setup :
+# INSTRUCTIONS FOR LOCAL SETUP :
 
 
 1. st_pages should be downloaded as : `pip install st-pages==0.4.1`
@@ -52,7 +52,7 @@ Note : I have not provided the .env file since it contains confidential data. Cr
 ##
 
 
-# Instructions for deployment on Streamlit cloud :
+# INSTRUCTIONS FOR DEPLOYMENT ON STREAMLIT CLOUD :
 
 1. Upload your project on GitHub without the .env file or the .json file. Keep the repository public and include the `requirements.txt` file.
 
