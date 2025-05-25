@@ -76,15 +76,30 @@ Note : I have not provided the .env file since it contains confidential data. Cr
 
 
 4. Click on Advanced, change the Python version to 3.11.
-   Paste the content of the .env file in the `Secrets` textbox.
+   Paste the content of the .env file in the `Secrets` textbox like this :
+   ```
+   FIREBASE_PRIVATE_JSON_KEY = '{ "type": "service_account", "project_id": "_____", "private_key_id": _____", "private_key": "-----BEGIN PRIVATE KEY-----\n_____\n-----END PRIVATE KEY-----\n", "client_email": "_____", "client_id": "_____", "auth_uri": "_____", "token_uri": "_____", "auth_provider_x509_cert_url": "_____", "client_x509_cert_url": "_____", "universe_domain": "_____" }'
+
+
+   FIREBASE_CONFIG = '{ "apiKey": "_____", "authDomain": "_____", "databaseURL": "_____", "projectId": "deepfakedetection-5b108", "storageBucket": "_____", "messagingSenderId": "_____", "appId": "_____", "measurementId": "_____" }'
+
+
+   GEMINI_API_KEY = "_____"
+
+   SMTP_SERVER = "_____"
+   SMTP_PORT = 587
+   SMTP_USERNAME = "_____"
+   SMTP_PASSWORD = "_____"
+   RECIPIENT_EMAIL = "_____"
+   ```
 
 
 5. Click on Save and then on Deploy.
 
 
-##
+#
 ---
-##
+#
 
 ```
 NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK.
