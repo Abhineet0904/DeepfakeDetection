@@ -54,7 +54,7 @@ Note : I have not provided the .env file since it contains confidential data. Cr
 
 # Instructions for deployment on Streamlit cloud :
 
-1. Upload your project on GitHub without the .env file or the .json file. Keep the repository public.
+1. Upload your project on GitHub without the .env file or the .json file. Keep the repository public and include the `requirements.txt` file.
 
 
 2. Run your project locally, click on Deploy, choose the `Deploy a public app from GitHub` option.
