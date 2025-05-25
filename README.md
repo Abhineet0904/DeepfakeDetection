@@ -1,4 +1,4 @@
-#Instructions for local setup :
+# Instructions for local setup :
 
 
 1. st_pages should be downloaded as : `pip install st-pages==0.4.1`
