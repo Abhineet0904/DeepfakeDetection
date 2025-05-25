@@ -97,6 +97,8 @@ Note : I have not provided the .env file or the Firebase Admin SDK private key, 
 
 5. Click on Save and then on Deploy.
 
+Note : For local deployment, you can paste the name of the Firebase Admin SDK .json file in `FIREBASE_PRIVATE_JSON_KEY`, but for Streamlit  Cloud deployment you will have to pste the entire JSON data in `FIREBASE_PRIVATE_JSON_KEY` in one single line.
+
 
 #
 ---
