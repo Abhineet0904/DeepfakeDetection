@@ -16,7 +16,7 @@
 
 
 4. In project settings, go to Service accounts and click on Generate new private key. Paste the downloaded firebase-adminsdk file with .json extension in your project's root directory.
-- Then paste the name of this file in .env file in your root folder in the following way :
+   - Then paste the name of this file in .env file in your root folder in the following way :
    `FIREBASE_PRIVATE_JSON_KEY = "_______"`
 
 
@@ -53,3 +53,22 @@
    - You can enter any name, just ensure that the email address you enter should be used to create the account in the streamlit webapp, otherwise the feedback will not be received on the recipient email address.
 
 Note : I have not provided the .env file since it contains confidential data. Create your own .env file in the root directory of your project.
+
+
+
+---
+
+
+
+# Instructions for deployment on Streamlit cloud :
+
+1. Upload your project on GitHub without the .env file or the .json file. Keep the repository public.
+
+2. Run your project locally, click on Deploy, choose the `Deploy a public app from GitHub` option.
+
+3. Enter your repository, branch, homepage, URL of your choice.
+
+4. Click on Advanced, change the Python version to 3.11.
+   Paste the content of the .env file in the `Secrets` textbox.
+
+5. Click on Save and then on Deploy.
