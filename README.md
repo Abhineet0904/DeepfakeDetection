@@ -1,7 +1,7 @@
 # INSTRUCTIONS FOR LOCAL SETUP :
 
 
-1. st_pages should be downloaded as : `pip install st-pages==0.4.1`
+1. st_pages should be downloaded as : ```pip install st-pages==0.4.1```
    - This version contains the show_pages() method, which is deprecated in recent versions.
    - Streamlit installed should be v1.25.0, to ensure compatibility with st-pages v0.4.1.
 
@@ -14,17 +14,17 @@
 
 4. In project settings, go to Service accounts and click on Generate new private key. Paste the downloaded firebase-adminsdk file with .json extension in your project's root directory.
    - Then paste the name of this file in .env file in your root folder in the following way :
-   `FIREBASE_PRIVATE_JSON_KEY = "_______"`
+   ```FIREBASE_PRIVATE_JSON_KEY = "_______"```
 
 
 6. Then go to General in project settings. In SDK setup and configuration, click on Config radio button, and copy the Firebase configuration object. Paste the object in the .env file in the following way :
-   `FIREBASE_CONFIG = {"apiKey": "________", "authDomain": "________", "databaseURL": "_______", "projectId: "_______", "storageBucket": "_______", "messagingSenderId": "_______", "appId": "_______", "measurementId": "_______"}`
+   ```FIREBASE_CONFIG = {"apiKey": "________", "authDomain": "________", "databaseURL": "_______", "projectId: "_______", "storageBucket": "_______", "messagingSenderId": "_______", "appId": "_______", "measurementId": "_______"}```
    
    NOTE : If you haven't switched on Realtime database, then either "databaseURL" or "storageBucket" may not appear in your Firebase config object. Do not switch it on, since it isn't required. I had by mistake switched it on and then had to switch off.
 
 
 7. Now go to https://aistudio.google.com/apikey and create a new API key, select your project and copy the generaed key. Paste this key in your .env file like this :
-   `GEMINI_API_KEY = "_______"`
+   ```GEMINI_API_KEY = "_______"```
 
 
 8. Go to https://www.brevo.com/ and create an account.
@@ -78,6 +78,6 @@ Note : I have not provided the .env file since it contains confidential data. Cr
 ##
 
 ```
-NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK. 
-- For local deployment, contact me on LinkedIn, my account is there in the project description.
+NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK.
+For local deployment, contact me on LinkedIn, my account is there in the project description.
 ```
