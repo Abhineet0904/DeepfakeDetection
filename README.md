@@ -74,5 +74,7 @@ Note : I have not provided the .env file since it contains confidential data. Cr
 ---
 ##
 
+```
 NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK. 
 - For local deployment, contact me on LinkedIn, my account is there in the project description.
+```
