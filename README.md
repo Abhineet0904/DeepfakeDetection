@@ -132,7 +132,7 @@ Note : For local deployment, you can paste the name of the Firebase Admin SDK ".
 
 
 
-```
-NOTE : The above source is for deployment on Streamlit Community Cloud. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK.
-For local deployment, contact me on LinkedIn, my account is there in the project description.
+# ```
+NOTE : THE ABOVE SOURCE IS FOR DEPLOYMENT ON STREAMLIT COMMUNITY CLOUD. FOR LOCAL DEPLOYMENT, THE ABOVE SOURCE CODE WILL NOT WORK.
+FOR LOCAL DEPLOYMENT, CONTACT ME ON LINKEDIN, MY ACCOUNT IS THERE IN THE PROJECT DESCRIPTION.
 ```
