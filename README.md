@@ -1,6 +1,6 @@
 # INSTRUCTIONS FOR TRAINING THE MODEL:
 
-1. Donwload the .ipynb file from here and import it in Google Colab. Don't use Jupyter as it doesn't provide GPU/TPU acceleration.
+1. Download the .ipynb file from here and import it in Google Colab. Don't use Jupyter as it doesn't provide GPU/TPU acceleration.
 
 2. Change the runtime to v2-8 TPU.
 
@@ -48,14 +48,14 @@
    NOTE : If you haven't switched on Realtime database, then either "databaseURL" or "storageBucket" may not appear in your Firebase config object. Do not switch it on, since it isn't required. I had by mistake switched it on and then had to switch off.
 
 
-6. Now go to https://aistudio.google.com/apikey and create a new API key, select your project and copy the generaed key. Paste this key in your .env file like this :
+6. Now go to https://aistudio.google.com/apikey and create a new API key, select your project and copy the generated key. Paste this key in your .env file like this :
    ```
    GEMINI_API_KEY = "_______"
    ```
 
 
 7. Go to https://www.brevo.com/ and create an account.
-   - Click on the top right dropdown arrow, then on SMTP & API. Copy the values of Login (________@smtp-relay.brevo.com)) and the Master Password (________) in the .env file like this :
+   - Click on the top right dropdown arrow, then on SMTP & API. Copy the values of Login (________@smtp-relay.brevo.com)) and the Master Password in the .env file like this :
    ```
    SMTP_USERNAME = "________@smtp-relay.brevo.com"
    SMTP_PASSWORD = "________"
@@ -68,13 +68,15 @@
    SMTP_PORT = 587
    RECIPIENT_EMAIL = "________"
    ```
-   NOTE : The RECIPIENT_EMAIL here, contains the your personal email address you want to receive the user's feedback/query on.
+   NOTE : The RECIPIENT_EMAIL here, contains the email address you want to receive the user's feedback/query on.
 
 
 9. Click on the top right dropdown arrow, then on Senders, Domains & Dedicated IPs. Here click on Add Sender, enter any name and the email you are going to use to create an account in this webapp.
    - You can enter any name, just ensure that the email address you enter should be used to create the account in the streamlit webapp, otherwise the feedback will not be received on the recipient email address.
 
+```
 Note : I have not provided the .env file or the Firebase Admin SDK private key, since they contain confidential data. Create your own .env file in the root directory of your project, and generate your own key.
+```
 
 
 
@@ -117,7 +119,9 @@ Note : I have not provided the .env file or the Firebase Admin SDK private key, 
 
 5. Click on Save and then on Deploy.
 
-Note : For local deployment, you can paste the name of the Firebase Admin SDK .json file in `FIREBASE_PRIVATE_JSON_KEY`, but for Streamlit  Cloud deployment you will have to pste the entire JSON data in `FIREBASE_PRIVATE_JSON_KEY` in one single line.
+```
+Note : For local deployment, you can paste the name of the Firebase Admin SDK ".json" file in `FIREBASE_PRIVATE_JSON_KEY`, but for Streamlit  Cloud deployment you will have to paste the entire JSON data in `FIREBASE_PRIVATE_JSON_KEY` in one single line.
+```
 
 
 
