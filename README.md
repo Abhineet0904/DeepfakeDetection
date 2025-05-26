@@ -1,5 +1,23 @@
-# INSTRUCTIONS FOR LOCAL SETUP :
+# INSTRUCTIONS FOR TRAINING THE MODEL:
 
+1. Donwload the .ipynb file from here and import it in Google Colab. Don't use Jupyter as it doesn't provide GPU/TPU acceleration.
+
+2. Change the runtime to v2-8 TPU.
+
+3. Upload the dataset in Google Drive.
+
+4. After converting the keras model to TFLite, download the TFLite model and paste it in the root directory of your project.
+
+
+
+#
+---
+---
+#
+
+
+
+# INSTRUCTIONS FOR LOCAL SETUP :
 
 1. st_pages should be downloaded as :
    ```
@@ -59,10 +77,12 @@
 Note : I have not provided the .env file or the Firebase Admin SDK private key, since they contain confidential data. Create your own .env file in the root directory of your project, and generate your own key.
 
 
+
 #
 ---
 ---
 #
+
 
 
 # INSTRUCTIONS FOR DEPLOYMENT ON STREAMLIT CLOUD :
@@ -98,6 +118,7 @@ Note : I have not provided the .env file or the Firebase Admin SDK private key, 
 5. Click on Save and then on Deploy.
 
 Note : For local deployment, you can paste the name of the Firebase Admin SDK .json file in `FIREBASE_PRIVATE_JSON_KEY`, but for Streamlit  Cloud deployment you will have to pste the entire JSON data in `FIREBASE_PRIVATE_JSON_KEY` in one single line.
+
 
 
 #
