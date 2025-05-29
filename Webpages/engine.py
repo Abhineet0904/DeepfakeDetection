@@ -52,7 +52,7 @@ with col5 :
 
 
 
-interpreter = Interpreter(model_path = "deepfake_detector_model.tflite")
+interpreter = Interpreter(model_path = "../deepfake_detection_model.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
