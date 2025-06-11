@@ -42,7 +42,7 @@ with col5 :
         st.session_state.user_data = []
         st.session_state["logged_in"] = False
         st.toast("**Logout successful!**")
-        time.sleep(2)
+        #time.sleep(2)
         st.experimental_rerun()
 
 
