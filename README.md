@@ -1,4 +1,4 @@
-# INSTRUCTIONS FOR TRAINING THE MODEL:
+# INSTRUCTIONS FOR TRAINING THE MODEL :
 
 1. Download the .ipynb file from here and import it in Google Colab. Don't use Jupyter as it doesn't provide GPU/TPU acceleration.
 
